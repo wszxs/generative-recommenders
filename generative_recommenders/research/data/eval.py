@@ -70,7 +70,7 @@ def get_eval_state(
     )
 
 
-@torch.inference_mode  # pyre-ignore [56]
+@torch.inference_mode()  # pyre-ignore [56]
 def eval_metrics_v2_from_tensors(
     eval_state: EvalState,
     model: SimilarityModule,
